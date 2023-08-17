@@ -14,6 +14,11 @@
         margin-right: 20px;
     }
 
+    .mediumIcon {
+        margin-left: 14px;
+        /* margin-right: auto; */
+    }
+
     #extraDot {
         list-style-type: none;
     }
@@ -25,12 +30,27 @@
 
     #bellIcon {
         margin-right: 50px;
+        color: #b9b9b9;
+
         /* font-weight: lighter; */
+        /* text-decoration: none; */
+
 
     }
 
+    #bellIcon :hover {
+        color: rgb(100, 100, 100);
+        cursor: pointer;
+    }
+
+    .bg-body-tertiary {
+        background-color: white;
+    }
+
     .navBar {
-        padding-right: 20px;
+        padding-right: 20 px;
+        height: 40px;
+        background-color: rgb(255 255 255);
     }
 
     .writeIcon {
@@ -45,12 +65,41 @@
 
     .searchInput {
         border-radius: 20px;
+        border: none;
+        border-style: none;
+        outline: none;
+        background-color: rgb(255, 255, 255);
+        padding-left: 10px;
+
+
     }
+
+    .searchField {
+        display: flex;
+        margin-left: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        /* border: 2px grey solid; */
+        border-radius: 50px;
+        padding-left: 10px;
+        height: 38px;
+
+
+    }
+
+    .fa-pen-to-square {
+        margin-right: 8px;
+    }
+
+
 
     .lefty {
         position: absolute;
         left: -105px;
+        margin-right: 10px;
     }
+
 
 
     .mainContainer {
@@ -59,6 +108,19 @@
         width: 100%;
         padding: 5.5svw;
         padding-top: 3vw;
+        /* display: flex; */
+        /* justify-content: end ; */
+    }
+
+    .twoColumsMainPage {
+        display: flex;
+        justify-content: space-between;
+        /* border: 4px solid green; */
+    }
+    .newsSection{
+        border: 4px solid blue;
+        width: 28%;
+        padding: 10px;
     }
 
     #forYouLink {
@@ -131,6 +193,11 @@
         outline: none;
     }
 
+    .storyBtn {
+        width: 40px;
+        height: 40px;
+    }
+
     .storyWrite {
         --x-height-multiplier: 0.375;
         --baseline-multiplier: 0.17;
@@ -148,7 +215,168 @@
 
     }
 
-    
+    .writeStory {
+        margin-right: 30px;
+    }
+
+    .writeButton {
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #6B6B6B;
+        /* border: 0.2px grey solid; */
+        border: 0px;
+        /* border-radius: 0; */
+        background: none;
+    }
+
+    .writeStory :hover {
+        font-weight: lighter;
+        color: black;
+        /* box-shadow: rgb(75, 75, 77) 2px 3px 12px 0.2px; */
+
+    }
+
+    #forYouLink {
+        text-decoration: none;
+    }
+
+    .publishedArticleArea {
+        /* border: 2px solid black; */
+        /* height: 40vh;
+        width: 70vw; */
+        padding: 5px;
+        /* display: flex; */
+        /* flex-direction: column; */
+
+    }
+
+
+    .publishedArticleTitle {
+        font-weight: 700;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .publishedArticleStory {
+
+        /* max-height: 72px; */
+        font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+
+
+
+    }
+
+    .rightAlignedArea {
+
+
+        margin-right: 4px;
+        margin-left: auto;
+        border: 2px grey solid;
+        height: 70%;
+        width: 20%;
+        margin-top: 20px;
+
+
+
+
+    }
+
+    .publishedArticleArea {
+        /* margin-top: 15px;     */
+        /* border: red solid   4px;  */
+        margin-top: 40px;
+        width: 60vw;
+    }
+
+    .publishedArticleDetails {
+        height: 32px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .publishedArticleDetails p {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        font-size: 14px;
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+
+    .publishedArticleDetails img {
+        height: 29px;
+        border-radius: 20px;
+    }
+
+
+    .articleList {
+        list-style: none;
+        margin-left: 0px;
+        padding-left: 2px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        line-height: 24px;
+
+
+        display: flex;
+
+    }
+
+    .articleHeading {
+
+        /* height: 72px; */
+        color: #242424;
+        font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        -webkit-line-clamp: 3;
+
+    }
+
+    .articleText {
+
+        font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+        font-weight: 400;
+
+
+
+    }
+
+    .articleTextBucket {
+        width: 70%;
+    }
+
+
+    .articleImage img {
+        height: 100px;
+        width: 100px;
+        /* margin: 9px; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-left: 70px;
+
+
+    }
+
+    .publishedArticleSingle {
+        /* border: black solid 4px; */
+        margin: 9px;
+        margin-bottom: 70px;
+    }
+    .newsHeading{
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
 </style>
 
 <body>
@@ -158,8 +386,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <!-- navbar content -->
 
-        <div class="container-fluid navBar">
-            <a class="navbar-brand fs-4" href="#">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4 mediumIcon" href="#">
                 <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/medium-icon.png"
                     alt="Bootstrap" width="30" height="24">
             </a>
@@ -170,28 +398,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
 
-                    <form class="d-flex" role="search" id="navSearch">
-                        <input class="form-control me-2 searchInput" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="searchField">
+
+                        <div class="searchIcon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+                        <form class="d-flex" role="search" id="navSearch">
+                            <input class=" searchInput" type="search" placeholder="Search Medium" aria-label="Search">
+                            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        </form>
+                    </div>
                 </ul>
 
                 <!-- xxxxxxxxxxxxxxxx -->
-                <div class="writeIcon">
-                    <button type="button" id="storyBtn" class="btn" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        <i class="fa-regular fa-pen-to-square"></i>
-                    </button>
-                    Write
-                </div>
+
 
 
 
@@ -199,8 +421,20 @@
 
                 <!-- Button trigger modal -->
                 <div class="writeStory">
+
+
+
+
+
+
+
+
+
+
+
                     <div class="writeStoryIcon">
-                        <button class="writeButton">write your article</button>
+
+                        <button class="writeButton"><i class="fa-regular fa-pen-to-square"></i>Write</button>
                         <!-- <i class="fa-solid fa-xmark"></i> -->
                     </div>
 
@@ -244,9 +478,11 @@
         <div class="crossBtn">
             <button id="closeStoryArea">X</button>
         </div>
-        <input type="text" id="storyTitle" class="storyTitle" placeholder="Title">
+        <input type="text" id="storyTitle" class="storyTitle taskTitle" placeholder="Title">
         <br>
-        <textarea class="storyWrite" name="" id="" cols="30" rows="10" placeholder="Tell your story..."></textarea>
+        <textarea class="storyWrite" name="" id="newTask" cols="30" rows="10"
+            placeholder="Tell your story..."></textarea>
+        <button id="taskBtn">enter to submit</button>
     </div>
 
 
@@ -262,60 +498,186 @@
 
     <!--------------------------- write article area-------------------------------------------- -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Submit your blog here</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <!-- modal content -->
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="TItle" aria-label="Username">
-                    <span class="input-group-text">@</span>
-                    <input type="text" class="form-control" placeholder="Author name" aria-label="Server">
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text">With textarea</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
-                <br>
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon3">Blog image URL</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-                </div>
 
 
 
 
 
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add Blog</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
+
+
+
+    <!---------------------------------------- published article area------------------------------------------------ -->
 
     <div class="mainContainer">
 
 
-       
 
 
 
-        <ul class="nav nav-underline">
-            <li class="nav-item">
-                <a id="forYouLink" class="nav-link active" aria-current="page" href="#">For you</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Following</a>
-            </li>
+        <div class="ForyouFollowingHeading">
 
-        </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a id="forYouLink" class="nav-link active" aria-current="page" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Following</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="twoColumsMainPage">
+            <div id="publishedArticleArea" class="publishedArticleArea">
+                <div class="publishedArticleSingle">
+                    <div class="publishedArticleDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
+                        <!-- <h4 class="publishedArticleTitle">enter you</h4>
+                <h6 class="publishedArticleStory">enter you</h6> -->
+                        <ul class="articleList">
+                            <div class="articleTextBucket">
+                                <li class="articleHeading"> Why Experienced Programmers Fail Coding Interviews</li>
+                                <li class="articleText">A friend of mine recently joined a FAANG company as an
+                                    engineering
+                                    manager,
+                                    and found themselves in the position of recruiting for engineering candidates. We
+                                    caught
+                                    up.
+                                    “Well,” I laughed when they...
+                                </li>
+                            </div>
+                            <div class="articleImage">
+                                <img src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg"
+                                    alt="">
+                        </ul>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div class="publishedArticleSingle">
+
+                    <div class="publishedArticleDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
+                        <!-- <h4 class="publishedArticleTitle">enter you</h4>
+                <h6 class="publishedArticleStory">enter you</h6> -->
+                        <ul class="articleList">
+                            <div class="articleTextBucket">
+                                <li class="articleHeading"> Why Experienced Programmers Fail Coding Interviews</li>
+                                <li class="articleText">A friend of mine recently joined a FAANG company as an
+                                    engineering
+                                    manager,
+                                    and found themselves in the position of recruiting for engineering candidates. We
+                                    caught
+                                    up.
+                                    “Well,” I laughed when they...
+                                </li>
+                            </div>
+                            <div class="articleImage">
+                                <img src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg"
+                                    alt="">
+                        </ul>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <div class="publishedArticleSingle">
+                    <div class="publishedArticleDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
+                        <!-- <h4 class="publishedArticleTitle">enter you</h4>
+                <h6 class="publishedArticleStory">enter you</h6> -->
+                        <ul class="articleList">
+                            <div class="articleTextBucket">
+                                <li class="articleHeading"> Why Experienced Programmers Fail Coding Interviews</li>
+                                <li class="articleText">A friend of mine recently joined a FAANG company as an
+                                    engineering
+                                    manager,
+                                    and found themselves in the position of recruiting for engineering candidates. We
+                                    caught
+                                    up.
+                                    “Well,” I laughed when they...
+                                </li>
+                            </div>
+                            <div class="articleImage">
+                                <img src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg"
+                                    alt="">
+                        </ul>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+                <!-- <div class="rightAlignedArea">
+                    <p>image here</p>
+                </div> -->
+            </div>
+
+
+
+            <!-- newssssssssssssssssssss areaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+            <div class="newsSection">
+                news here
+                <div class="newsPallet">
+                    <div class="publishedArticleDetails publishedNewsDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div class="newsHeading">
+                        Lorem ipsum dolor sit.
+                    </div>
+                </div>
+                <div class="newsPallet">
+                    <div class="publishedArticleDetails publishedNewsDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div class="newsHeading">
+                        Lorem ipsum dolor sit.
+                    </div>
+                </div>
+                <div class="newsPallet">
+                    <div class="publishedArticleDetails publishedNewsDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div class="newsHeading">
+                        Lorem ipsum dolor sit.
+                    </div>
+                </div>
+                <div class="newsPallet">
+                    <div class="publishedArticleDetails publishedNewsDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div class="newsHeading">
+                        Lorem ipsum dolor sit.
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
     </div>
 
 
