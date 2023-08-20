@@ -2,18 +2,22 @@ const newArticle = document.querySelector('.writeButton')
 const displayModal = document.querySelector('#storyArea')
 const closeStoryArea = document.querySelector('#closeStoryArea')
 const mainContainerResponse = document.querySelector('.mainContainer')
-var input = document.getElementById("storyTitle");
+const input = document.getElementById("storyTitle");
 
 
 
 // adding new task
-const newTask = document.querySelector('#newTask');
+// const newTask = document.querySelector('#newTask');
 // const publishedArticleArea = document.querySelector('#publishedArticleArea')
-const publishedArticleTitle = document.querySelector('.publishedArticleTitle')
-const publishedArticleStory = document.querySelector('.publishedArticleStory')
+// const publishedArticleTitle = document.querySelector('.publishedArticleTitle')
+const publishedArticleSingle = document.querySelector('.publishedArticleSingle')
+// const articleList = document.querySelector('.articleList')
+// const articleTextBucket = document.querySelector('.articleTextBucket')
 
 // const btn=
 const storyTitle = document.querySelector('#storyTitle')
+
+publishedArticleSingle.innerHTML = localStorage.getItem('publishedArticleSingle');
 
 
 const taskBtn = document.querySelector('#taskBtn')
@@ -25,42 +29,59 @@ taskBtn.addEventListener('click', (ev) => {
 
     // story title
 
-    const liT = document.createElement('li')
+    // const liT = document.createElement('li')
+    const li = document.createElement('li')
 
-    let strT = `
-    <div id="publishedArticleArea" class="publishedArticleArea">
-    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
-                <h4 class="publishedArticleTitle"> ${taskT}</h4>
+    let str = `
+    <div class="publishedArticleSingle extraDot">
+                    <div class="publishedArticleDetails">
+                        <img class="articleIconImg"
+                            src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg" alt="">
+                        <p class="articleUsername">The user name</p>
+                        <p class="articleDateTime"> 01 01 0101</p>
+                    </div>
+                    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
+                        <ul class="articleList">
+                            <div class="articleTextBucket">
+                                <li class="articleHeading">${taskT}</li>
+                                <li class="articleText ellipsis">${task}</li>
+                                
+                            </div>
+                            <div class="articleImage">
+                                <img src="images/desktop-wallpaper-dark-anime-boy-aesthetic-icons-dark-anime-icons.jpg"
+                                    alt="">
+                        </ul>
+                        <!-- </div> -->
 
-            </div>
-            </div>
-    
-    
-    `
+                        </div>
+                        </div>
+                        
+                        
+                        `
 
-    liT.innerHTML = strT;
+    // liT.innerHTML = strT;
 
-    publishedArticleTitle.appendChild(liT);
+    li.innerHTML = str;
+    // publishedArticleTitle.appendChild(liT);
+    // li.classList.add('articleList');
+    publishedArticleSingle.appendChild(li);
 
 
     // story here
 
 
-    const li = document.createElement('li')
-    let str = `
-    <div id="publishedArticleArea" class="publishedArticleArea">
-    <div id="publishedArticle" class="leftAlignedArea publishedArticle">
-                <h6 class="publishedArticleStory">${task}</h6>
+    // let str = `
+    // <div id="publishedArticleArea" class="publishedArticleArea">
+    // <div id="publishedArticle" class="leftAlignedArea publishedArticle">
+    //             <h6 class="publishedArticleStory">${task}</h6>
 
-            </div>
-            </div>
+    //         </div>
+    //         </div>
 
-            `
+    //         `
 
 
-    li.innerHTML = str;
 
-    publishedArticleStory.appendChild(li);
 
 
 
@@ -70,7 +91,7 @@ taskBtn.addEventListener('click', (ev) => {
 
 
 
-
+    localStorage.setItem('publishedArticleSingle', publishedArticleSingle.innerHTML);
 
     displayModal.style.display = 'none';
     mainContainerResponse.style.display = 'block'
